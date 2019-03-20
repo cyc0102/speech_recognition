@@ -14,7 +14,7 @@ try:
     print("Google Speech Recognition thinks you said:")
     print(r.recognize_google(audio, language="zh-TW"))
 except sr.UnknownValueError:
-    print("Google Speech Recognition could not understand audio")
+    print("Google Speech Recognition not understand audio")
 except sr.RequestError as e:
     print("No response from Google Speech Recognition service: {0}".format(e))
 
