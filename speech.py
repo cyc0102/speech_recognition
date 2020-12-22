@@ -12,6 +12,7 @@ with sr.Microphone() as source:
 # recognize speech using Google Speech Recognition 
 try:
     print("Google Speech Recognition thinks you said:")
+#    print(r.recognize_google(audio, language="en-US"))
     print(r.recognize_google(audio, language="zh-TW"))
 except sr.UnknownValueError:
     print("Google Speech Recognition not understand audio")
